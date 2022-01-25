@@ -1,14 +1,14 @@
 import { getJsonData } from '../utils/tool';
 import CarouselComp from '../components/ui/carousel';
+import Articles from '../components/home/articles';
 
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 
 const Home = ({ data }) => {
-	console.log(data);
 	return (
 		<>
 			<CarouselComp data={data.carrousel} />
+			<Articles data={data.articles} />
+
 		</>
 	);
 };
